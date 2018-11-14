@@ -2,18 +2,18 @@ import React from 'react';
 import { Text, StyleSheet, View } from 'react-native';
 
 
-const Header = () => {
+const Header = (props) => {
 	const {viewStyle , textStyle} = styles;
 	return (
 		<View style={viewStyle}>
-		<Text style={textStyle}>Albums!</Text>
+		<Text style={textStyle}>{props.HeaderText}</Text>
 		</View>
 		);
 };
 
 const styles = StyleSheet.create({
 	textStyle:{
-		fontSize: 25,
+		fontSize: 20,
 	},
 	viewStyle:{
 		backgroundColor:'#F8F8F8',
