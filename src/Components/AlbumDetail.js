@@ -13,14 +13,16 @@ const AlbumDetail = ({album}) =>{
 				<View style={thumbnailContainerStyle}>
 					<Image
 					style={thumbnailImage}
-					source={{uri: thumbnail_image}} />
+					source={{uri: thumbnail_image}}
+					 />
 				</View>
 
 				<View style={HeaderContainerStyle}>
-				<Text style={HeaderText}>{title}</Text>
-				<Text>{artist}</Text>
+					<Text style={HeaderText}>{title}</Text>
+					<Text>{artist}</Text>
 				</View>
 			</CardSection>
+
 			<CardSection>
 				<Image 
 				style={imageStyle}

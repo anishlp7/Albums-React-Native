@@ -18,11 +18,10 @@ class AlbumList extends Component  {
 			<AlbumDetail key={albums.title} album={albums}/>);
 	}
 
-
 	render(){
 		return(
 			<ScrollView>
-			{this.renderAlbums()}
+				{this.renderAlbums()}
 			</ScrollView>
 		);
 	}
